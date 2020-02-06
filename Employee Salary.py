@@ -7,6 +7,7 @@ epf= 10% of basic
 Net salary= basic+ta+da+hrf-epf '''
 
 class Company:
+    
     def __init__(self):
         self.cname = input("Enter Company Name: ")
         self.empid = input("Enter Employee ID: ")
@@ -17,6 +18,7 @@ class Company:
 
 
 class Basic_salary:
+    
     def __init__(self):
         self.TA = ((18*self.salary)/100)
         self.DA = ((17*self.salary)/100)
@@ -26,6 +28,7 @@ class Basic_salary:
 
 
 class Calculation(Company, Basic_salary):
+    
     def __init__(self):
         Company.__init__(self)
         Basic_salary.__init__(self)
